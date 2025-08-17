@@ -3,9 +3,11 @@
     "name": "expensetracker",
     "slug": "expensetracker",
     "version": "1.0.0",
+
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
+    "sdkVersion": "53.0.0",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
