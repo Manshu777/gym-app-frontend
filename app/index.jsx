@@ -4,7 +4,7 @@ import { Text, View } from "react-native";
 import Welcome from '../components/Welcome'
 
 export default function Index() {
-    const { user, setUser } = useState(true);
+    const { user, setUser } = useState(false);
   return (
     <View
       style={{
@@ -14,7 +14,7 @@ export default function Index() {
       }}
     >
      {
-      user?<Welcome/> : <Redirect href={'/(tab)'}/>
+      user?  <Redirect href={'/(tab)'}/>:<Welcome/>
      }
     </View>
   );
