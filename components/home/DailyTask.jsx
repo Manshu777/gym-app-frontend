@@ -2,16 +2,20 @@ import { StyleSheet, Text, View, ScrollView, Image, Animated } from 'react-nativ
 import React, { useEffect, useRef } from 'react';
 
 // Import images
-import basketballImg from '../../assets/images/shoot.png';
-import tennisImg from '../../assets/images/tennis.png';
-import footballImg from '../../assets/images/football.png';
-import cricketImg from '../../assets/images/cricket.jpg';
+import basketballImg from '../../assets/images/basketball.gif';
+import tennisImg from '../../assets/images/tennis.gif';
+import footballImg from '../../assets/images/football.gif';
+import cricketImg from '../../assets/images/cricket.gif';
+import hockeyImg from '../../assets/images/hockey.gif';     
+import boxingImg from '../../assets/images/boxing.gif';
 
 const sports = [
   { name: 'Basketball', image: basketballImg },
   { name: 'Tennis', image: tennisImg },
   { name: 'Football', image: footballImg },
   { name: 'Cricket', image: cricketImg },
+   { name: 'Hockey', image: hockeyImg },         
+  { name: 'Boxing', image: boxingImg }, 
 ];
 
 const DailyTask = () => {
@@ -75,6 +79,7 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     paddingHorizontal: 15,
+    marginVertical:10
   },
   card: {
     width: 120,
