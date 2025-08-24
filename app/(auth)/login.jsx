@@ -134,6 +134,10 @@ export default function Login() {
                   <Icon name={secureText ? "eye-slash" : "eye"} size={20} color="#aaa" />
                 </TouchableOpacity>
               </View>
+
+              <TouchableOpacity >
+                <Text style={styles.forgotPassword}>Forgot Password?</Text>
+              </TouchableOpacity>
             </Animated.View>
 
             {/* Login Button */}
@@ -251,4 +255,12 @@ const styles = StyleSheet.create({
     color: "#E53842",
     fontWeight: "bold",
   },
+  forgotPassword: {
+  color: "#E53842",
+  fontSize: 14,
+  marginTop: 8,
+  alignSelf: "flex-end",
+  fontWeight: "600",
+},
+
 });
